@@ -12,7 +12,7 @@ public interface CommonParam {
     String ALGORITHM = "AES/CBC/PKCS5Padding";
 
     // 推送接口
-    String api_ip = "http://222.84.136.172:38889";
+    String api_ip = "";
 
     // 运营商代码
     String operator_code = "574409725";
