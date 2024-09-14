@@ -49,14 +49,14 @@ public class GetDataFromBase implements DataGetFromBase{
      */
     public void listen(){
         //连接数据库导入数据
-//        String url = "jdbc:mysql://36.140.21.46:38569/liucheng_push";
+//        String url = "jdbc:mysql://";
 //        // 数据库用户名
 //        String user = "root";
 //        // 数据库密码
-//        String password = "plat123456";
+//        String password = "";
 
 
-        BinaryLogClient client = new BinaryLogClient("36.140.21.46", 38569, "lcdba", "123QWEasd@");
+        BinaryLogClient client = new BinaryLogClient("", 38569, "", "");
         // 反序列化配置
         EventDeserializer eventDeserializer = new EventDeserializer();
         // 设置自己的client作为服务器的id
