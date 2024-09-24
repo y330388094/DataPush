@@ -19,10 +19,10 @@ public class GetRemoteMoreData {
     private List<DBConnectVo> connections = new ArrayList<>();
 
     public void addConnection() {
-        DBConnectVo conn1 = new DBConnectVo("jdbc:mysql://36.140.21.46:38569/pigxx", "lcdba", "123QWEasd@");
+        DBConnectVo conn1 = new DBConnectVo("jdbc:mysql://:38569/pigxx", "", "");
         connections.add(conn1);
 
-        DBConnectVo conn2 = new DBConnectVo("jdbc:mysql://rm-wz9z3ymc75p1slr8k5o.mysql.rds.aliyuncs.com:3306/ips_test", "root", "Yg@_+123");
+        DBConnectVo conn2 = new DBConnectVo("jdbc:mysql://", "root", "");
         connections.add(conn2);
 
     }
@@ -68,11 +68,11 @@ public class GetRemoteMoreData {
      */
     public void getParking(){
         //连接数据库导入数据
-        String url = "jdbc:mysql://rm-wz9z3ymc75p1slr8k5o.mysql.rds.aliyuncs.com:3306/ips";
+        String url = "jdbc:mysql:///ips";
         // 数据库用户名
-        String user = "root";
+        String user = "";
         // 数据库密码
-        String password = "Yg@_+123";
+        String password = "";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -139,11 +139,11 @@ public class GetRemoteMoreData {
     public void getParkingRecord(){
 
         //连接数据库导入数据--柳城
-        String url = "jdbc:mysql://36.140.21.46:38569/pigxx";
+        String url = "jdbc:mysql:///pigxx";
         // 数据库用户名
-        String user = "lcdba";
+        String user = "";
         // 数据库密码
-        String password = "123QWEasd@";
+        String password = "";
 
         //获取当前时间
         String end = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
