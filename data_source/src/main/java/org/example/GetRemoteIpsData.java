@@ -95,11 +95,11 @@ public class GetRemoteIpsData {
     public void getParkingRecord(){
 
         //连接数据库导入数据--柳城
-        String url = "jdbc:mysql://rm-wz9z3ymc75p1slr8k5o.mysql.rds.aliyuncs.com:3306/ips";
+        String url = "jdbc:mysql://3306/ips";
         // 数据库用户名
-        String user = "root";
+        String user = "";
         // 数据库密码
-        String password = "Yg@_+123";
+        String password = "";
 
         //获取当前时间
         String end = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
